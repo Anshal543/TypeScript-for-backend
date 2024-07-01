@@ -16,3 +16,13 @@ getSearchProducts([{ name: "John", age: 23 }]);
 const getSearchProductsTwo = (products) => {
     return products;
 };
+function anotherFunction(val1, val2) {
+    return { val1, val2 };
+}
+anotherFunction("John", { connnection: "Connected", id: 1 });
+class Sellable {
+    constructor(product) {
+        this.cart = [];
+        this.cart.push(product);
+    }
+}

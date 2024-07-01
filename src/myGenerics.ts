@@ -28,3 +28,32 @@ getSearchProducts([{name:"John", age:23}])
 const getSearchProductsTwo = <T>(products:T[]):T[]=>{
     return products
 }
+
+interface DataBase{
+    connnection: string
+    id:number
+}
+
+function anotherFunction<T,U extends DataBase>(val1:T,val2:U):object{
+    return {val1,val2}
+}
+
+anotherFunction("John",{connnection:"Connected",id:1})
+
+interface Quiz{
+    question:string
+    answer:number
+}
+
+interface Couser{
+    name:string
+    course:string
+}
+
+class Sellable<T>{
+    public cart:T[] = []
+    constructor(product:T){
+        this.cart.push(product)
+
+    }
+}
